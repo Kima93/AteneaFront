@@ -1,0 +1,639 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color:#061D3B;
+    color: #E8DCF4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Ephesis", serif;
+    justify-content: center;
+    border-bottom: 3px solid #E8DCF4;
+    gap: 15px;
+}
+
+.ate {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.direc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pdir {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.psje {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+.dir {
+    align-items: center;
+}
+
+.phorario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.lun-vie {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: -27px;
+}
+
+.atencion {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.numero {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 22px;
+    margin-top: -20px;
+}
+
+.dia-noche {
+    width:30px;
+    height: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.dir, .horario, .tel, .redes {
+    display: none;
+}
+main {
+    background-color: #061D3B;
+    width: 100%;    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8DCF4;
+}
+
+/* Botón hamburguesa */
+.menu-btn {
+    background-color: #061D3B;
+    color: #E8DCF4;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-btn .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #E8DCF4;
+    margin: 4px 0; 
+}
+
+.boton-burger {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Menú desplegable */
+.menu {
+    display: none;
+    background-color: #061D3B;
+    color: #E8DCF4;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+    display: block;
+    color: #E8DCF4;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid #061D3B;
+}
+
+.menu a:hover {
+    background-color: #061D3B;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+/* Mostrar el menú al hacer clic */
+.menu.show {
+    display: block;
+}
+
+.navbarr {
+    display: none;
+}
+
+.imagen-principal {
+    opacity: 1;
+    width: 100%;
+}
+
+.image-container {
+    position: relative; /* Contenedor relativo para que el texto se posicione sobre la imagen */
+    width: 100%;
+     /* Ajusta el tamaño según sea necesario */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Asegura que la imagen sea responsiva */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centrado */
+    color: #E8DCF4;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejor legibilidad */
+    text-align: center;
+    font-family: "Ephesis", serif;
+}
+
+.text-overlay2 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicios {
+    color: #E8DCF4;
+    margin: 20px;
+}
+
+.prservicios {
+    text-align: center;
+    font-size: 24px;
+}
+
+.precios {
+    display: flex;
+    justify-content: center;
+}
+
+.brushing {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.belleza {
+    display: flex;
+    justify-content: center;
+}
+
+.noticias {
+    background-color: #E8DCF4; 
+    color:#061D3B;  
+    
+}
+
+.alinear-pelo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.notic {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+    color:#061D3B;
+}
+.img-pelu {
+    width: 40%;
+    height: 40%;
+}
+
+.img-pelo {
+    width: 40%;
+}
+
+.ptoallas {
+    font-size: 30px;
+    font-weight: bold;
+    width: 40%;
+    margin: 10px;
+}
+
+.pinfo {
+    width: 90%;
+    margin: 10px;
+    width: 40%;
+}
+
+.secado {
+    display: flex;
+    flex-direction: column;
+}
+
+.botox-pelo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pbotox {
+    font-size: 30px;
+    font-weight: bold;
+    width: 40%;
+    margin: 10px;
+}
+
+.tratamiento {
+    width: 40%;
+    margin: 0 20px 0 10px;
+}
+
+.tratbotox {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tenaza {
+    width: 40%;
+    margin-bottom: 60px;
+
+}
+
+.tenaza-pelo {
+    font-size: 30px;
+    font-weight: bold;
+    width: 40%;
+    margin: 10px;
+}
+
+.div-tenaza {
+    display: flex;
+    flex-direction: column;
+}
+
+.tenacilla {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tenaza-cabello {
+    margin-left: 15px;
+    width:40%;
+}
+
+.formu {
+    color:#E8DCF4; 
+    font-size: 30px;
+}
+
+#nombre {
+    background-color: #E8DCF4;
+    color: #061D3B;
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+}
+
+#apellido {
+    background-color: #E8DCF4;
+    color: #061D3B;
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+}
+
+#correo {
+    background-color: #E8DCF4;
+    color: #061D3B;
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+}
+
+#mensaje {
+    background-color: #E8DCF4;
+    color: #061D3B;
+    font-size: 17px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.submit-button {
+    background-color: #E8DCF4;
+    color: #061D3B;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-button:hover {
+    background-color: #d1c5e0;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #E8DCF4;
+    color: #061D3B;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #061D3B;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: #061D3B;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #061D3B;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #4A148C;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE5A;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.secado {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-pelo {
+    width: 50%;
+    height: 300px;
+}
+
+.img-pelu {
+    width: 50%;
+    height: 300px;
+}
+
+
+.ptoallas {
+    width: 100%;
+}
+
+.pinfo {
+    width: 100%;
+}
+
+.botox-pelo {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pbotox{
+    width: 100%;
+}
+
+.tratamiento {
+    width: 100%;
+}
+
+.tratbotox{
+    margin: 50px;
+}
+
+.tenacilla {
+    display: flex;
+    flex-direction: row;
+}
+
+.tenaza-pelo {
+    width: 100%;
+
+}
+
+.tenaza-cabello {
+    width: 100%;
+}
+
+.galeria {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+
+.galerias {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pgal {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color:#E8DCF4;
+}
+
+.img-pelu {
+    object-fit: contain;
+}
+
+.img-pelo {
+    object-fit: contain;
+}
+
+.tenaza {
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+.menu-btn {
+    display: none;
+}
+
+.dir, .horario, .tel, .redes {
+    display: block;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-burger {
+    display: none;
+}
+
+.navbarr {
+    display: block;
+}
+
+.navbarr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+    background-color: #061D3B;
+    color: #E8DCF4;
+    align-items: center;
+}
+
+a {
+    color: #E8DCF4; /* Cambia #061D3B por el color deseado */
+    text-decoration: none; /* Opcional: eliminar subrayado */
+}
+
+/* Color al pasar el cursor por encima */
+a:hover {
+    color: #4A148C; /* Cambia #4A148C por el color deseado */
+    text-decoration: underline; /* Opcional: agregar subrayado */
+}
+
+/* Enlaces visitados */
+a:visited {
+    color: #E8DCF4; /* Cambia #888888 por el color deseado */
+}
+
+/* Enlaces activos (al hacer clic) */
+a:active {
+    color: #FF5733; /* Cambia #FF5733 por el color deseado */
+}
+
+
+
+
+
+
+
+}
