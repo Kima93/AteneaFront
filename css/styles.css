@@ -610,24 +610,24 @@ header {
 }
 
 a {
-    color: #E8DCF4; /* Cambia #061D3B por el color deseado */
+    color: #E8DCF4; 
     text-decoration: none; /* Opcional: eliminar subrayado */
 }
 
 /* Color al pasar el cursor por encima */
 a:hover {
-    color: #4A148C; /* Cambia #4A148C por el color deseado */
+    color: #4A148C; 
     text-decoration: underline; /* Opcional: agregar subrayado */
 }
 
 /* Enlaces visitados */
 a:visited {
-    color: #E8DCF4; /* Cambia #888888 por el color deseado */
+    color: #E8DCF4; 
 }
 
 /* Enlaces activos (al hacer clic) */
 a:active {
-    color: #FF5733; /* Cambia #FF5733 por el color deseado */
+    color: #FF5733;
 }
 
 
